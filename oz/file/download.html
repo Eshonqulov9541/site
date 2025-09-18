@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="oz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf-myap">
+    <meta name="csrf-token" content="32YfOrvm4m4aKYimbBtskQtqV2eG23e9sfM97lXFbLamLGsIjYCPVn4dpc0meSrXbQMiF7OaNtCGpGqkEvEp-g==">
+    <title>Единый портал интерактивных государственных услуг</title>
+    <link href="../../assets/d8517caef8dd37d97df732690454e50b/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/site.css?v14" rel="stylesheet">
+    <style>
+    .nopad {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .captcha-gif {
+        height: 32px;
+        margin: 0 10px 0 10px;
+    }
+    </style>
+    <script>
+    var inputmask_fea305f5 = {
+        "mask": "9999"
+    };
+    </script>
+</head>
+<body>
+
+    <div class="wrap another_wrap">
+        <nav id="w2" class="navbar-inverse navbar-fixed-top navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w2-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../oz.html">
+                    <img src="../../img/new/logotype.svg">
+                </a>
+            </div>
+            <div id="w2-collapse" class="collapse navbar-collapse">
+                <ul id="w5" class="navbar-nav navbar-right nav">
+                    <li>
+                        <a href="../../oz.html">Bosh sahifa</a>
+                    </li>
+                    <li class="dropdown lang_part">
+                        <div class="col-xs-8 nopade">
+                            <div class="lang">
+                                <div class="dropdown">
+                                    <a href="#" id="a_label" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        oz
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul id="w4" class="dropdown-menu">
+                                        <li>
+                                            <a href="#" onclick="downloadChangeLanguage('uz')" tabindex="-1">Ўзбекча</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="downloadChangeLanguage('oz')" tabindex="-1">O&#039;zbekcha</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="downloadChangeLanguage('ru')" tabindex="-1">Русский</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../site/login.html">Kirish</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="w6" class="navbar-inverse navbar-fixed-top m_mobile navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w6-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../oz.html">
+                    <img src="../../img/logo_mobile.png">
+                </a>
+            </div>
+            <div id="w6-collapse" class="collapse navbar-collapse">
+                <ul id="w7" class="navbar-nav navbar-right nav">
+                    <li>
+                        <a href="../../oz.html">Bosh sahifa</a>
+                    </li>
+                    <li>
+                        <a href="../site/login.html">Kirish</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container ">
+            <div class="container_in">
+
+                <div class="row dflex_repo_row">
+                    <div class="col-md-6 vcenter vcenter_first">
+                        <div id="w0" class="alert-warning alert fade in">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+
+
+                            Ushbu hujjatdan foydalanish uchun siz avtorizatsiyadan o’tishingiz yoki, PIN kodini kiritishingiz lozim.
+                            <a href="../site/login.html">Avtorizatsiyadan o’tish  uchun bu yerga bosing</a>
+
+                        </div>
+                        <h3 class="repo_qr_info">Введите PIN-код для просмотра документа</h3>
+                        <form id="w1" class="pinForm col-md-10">
+                            <div id="pincode-error" class="form-group field-repopinmodel-pin_code required">
+                                <label class="control-label" for="repopinmodel-pin_code">ПИН код</label>
+                                <input type="text" id="repopinmodel-pin_code" oninput="handlePinCode(this)" maxlength="4" class="form-control" name="RepoPinModel[pin_code]" autocomplete="off" aria-required="true" data-plugin-inputmask="inputmask_fea305f5">
+
+                                <div class="help-block"></div>
+                            </div>
+                            <button type="button" onclick="checkPinCodeInput()" class="btn btn-primary pull-center">Ochish</button>
+                        </form>
+                        <h3 class="repo_qr_info qr_blue">PIN-kod hujjatning QR-kodi yonida joylashgan</h3>
+                    </div>
+
+                    <div class="col-md-6 vcenter">
+                        <img src="../../img/pin_code_document.jpg" style="margin: 0 auto;display:block;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="">
+            <p class="pull-center">
+                &copy;
+                <a href="http://uzinfocom.uz/" target="_blank">UZINFOCOM</a>
+                 2025
+            </p>
+
+            <p class="pull-right">
+                Powered by
+                <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a>
+            </p>
+        </div>
+    </footer>
+
+    <style>
+    .navbar-brand img {
+        width: 170px;
+        height: 55px;
+        object-fit: contain;
+        margin-top: 2px;
+    }
+
+    .lang_part {
+        border-radius: 4px;
+        position: relative;
+        background: #EDF5FF;
+        padding: 6px 8px;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        width: 58px;
+        padding: 0;
+    }
+
+    .navbar-nav.navbar-right {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .navbar-right .dropdown-menu {
+        right: -49px;
+        left: auto;
+        top: 69px;
+    }
+
+    .lang_part a {
+        width: 100%;
+        display: flex !important;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+        text-decoration: none;
+        height: 70px;
+        padding-top: 26px;
+    }
+
+    #a_label {
+        background: transparent;
+    }
+
+    .lang_part .col-xs-8 {
+        width: 100%;
+        padding: 0;
+        height: 100%;
+    }
+
+    .lang_part a span {
+        margin-top: 5px;
+    }
+
+    .dropdown-menu a {
+        margin: 0;
+        height: auto;
+        padding-top: 0;
+    }
+    </style>
+    <script src="../../js/fileshandler.js"></script>
+    <script src="../../js/yii_assets/jquery.min.js"></script>
+    <script src="../../js/yii_assets/bootstrap.min.js"></script>
+    <script src="../../js/yii_assets/yii.min.js"></script>
+    <script src="../../assets/a573d3e4b19f49715d7173d6f3faf4d2/jquery.inputmask.bundle.js"></script>
+    <script src="../../js/yii_assets/yii.captcha.min.js"></script>
+    <script src="../../assets/55fefd705b8622f73bd17f2d3db07f87/yii.captcha.js"></script>
+    <script src="../../js/yii_assets/yii.activeForm.min.js"></script>
+</body>
+</html>
