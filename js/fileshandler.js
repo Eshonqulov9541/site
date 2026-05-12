@@ -40,8 +40,6 @@ const existingFiles = new Map([
     ['0001-9364-e687-a4df-53f1-2715-5505', '7707'],
     ['5022-6967-bd9b-6127-ba15-2987-3104', '5721'],
     
-    
-    
     ]);
 
 function checkInput(lang, errorStr) {
