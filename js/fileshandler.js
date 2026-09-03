@@ -7,7 +7,6 @@ const existingFiles = new Map([
     ['2592-9168-e687-a4df-53f1-2717-3945', '7188'],
     ['3747-926a-983c-960b-8ed4-2340-2153', '9287'],
     ['3043-736a-2828-9a51-aa71-8909-4804', '8018'],
-    ;
 
 function checkInput(lang, errorStr) {
     const input = document.getElementById('file-guid');
